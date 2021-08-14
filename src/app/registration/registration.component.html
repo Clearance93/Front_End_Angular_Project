@@ -1,0 +1,50 @@
+
+
+    <div class="card-header">
+        <h2>Learner registration</h2>
+    </div>
+    <div class="container">
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="Text" class="form-control" name="name" id="name" [(ngModel)]="registration.name" placeholder="Kutlwano">
+        </div>
+        <div class="mb-3">
+            <label for="surname" class="form-label">Surame</label>
+            <input type="Text" class="form-control" name="surname" id="surname" [(ngModel)]="registration.surname" placeholder="Morumudi">
+        </div>
+        <div class="mb-3">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" name="dob" id="dob" [(ngModel)]="registration.dob" placeholder="20 June 2007">
+        </div>
+        <div class="mb-3">
+            <label for="id_number" class="form-label">Id Number</label>
+            <input type="number" class="form-control" name="id_number" id="id_number" [(ngModel)]="registration.id_number" placeholder="0706205452086">
+        </div>
+        <div class="mb-3">
+            <label for="home_address" class="form-label">Home Address</label>
+            <input type="Text" class="form-control" name="home_address" id="home_address" [(ngModel)]="registration.home_address" placeholder="10 Endeman Street Dawn Park Boksburg 1459">
+        </div>
+        <div class="mb-3">
+            <label for="criminal_record" class="form-label">Criminal Record</label>
+            <input type="Text" class="form-control" name="criminal_record" id="criminal_record" [(ngModel)]="registration.criminal_record" placeholder="No">
+        </div>
+        <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <input type="Text" class="form-control" name="gender" id="gender" [(ngModel)]="registration.gender" placeholder="Male">
+        </div>
+        <div class="mb-3">
+            <label for="ethic" class="form-label">Ethicr</label>
+            <input type="Text" class="form-control" name="ethic" id="ethic" [(ngModel)]="registration.ethic" placeholder="Black">
+        </div>
+        <div class="mb-3">
+            <label for="nationality" class="form-label">Nationality</label>
+            <input type="Text" class="form-control" name="nationality" id="nationality" [(ngModel)]="registration.nationality" placeholder="South Africa">
+        </div>
+        <div class="mb-3">
+            <label for="grade" class="form-label">Grade</label>
+            <input type="Text" class="form-control" name="grade" id="grade" [(ngModel)]="registration.grade" placeholder="Grade 08">
+        </div>
+        <button type="submit" class="btn btn-danger" (click)="submitData()">Submit</button>
+    </div>
+</div>

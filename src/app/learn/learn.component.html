@@ -1,0 +1,40 @@
+
+
+    <div class="card-header">
+        <h2>Senwane registered learners</h2>
+    </div>
+    <a routerLink="/registration" class="btn btn-primary">Learner Registration</a>
+    <div class="card-body">
+       <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>No:</th>
+                <th>Name:</th>
+                <th>Surname:</th>
+                <th>Date of Birth:</th>
+                <th>ID Number:</th>
+                <th>Home Address:</th>
+                <th>Criminal Record:</th>
+                <th>Gender:</th>
+                <th>Ethic:</th>
+                <th>Nationality:</th>
+                <th>Grade:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let learn of learners; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{learn.name}}</td>
+                <td>{{learn.surname}}</td>
+                <td>{{learn.dob}}</td>
+                <td>{{learn.id_number}}</td>
+                <td>{{learn.home_address}}</td>
+                <td>{{learn.criminal_record}}</td>
+                <td>{{learn.gender}}</td>
+                <td>{{learn.ethic}}</td>
+                <td>{{learn.nationality}}</td>
+                <td>{{learn.grade}}</td>
+            </tr>
+        </tbody>
+       </table>
+    </div>
